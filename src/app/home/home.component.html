@@ -1,0 +1,36 @@
+
+<div>
+  <div class="container-md">
+
+    <div class="card-group">
+      <div class="card" *ngFor="let product of products">
+        <!-- Sale badge-->
+        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+        <img class="card-img-top" src="{{urlImage+product.urlImage}}" alt="Card image cap" style="width: 200px; height: 33%;">
+        <div class="card-body">
+          <h5 class="card-title">{{product.title}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <!--   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <!-- Product reviews-->
+          <div class="d-flex justify-content-center small text-warning mb-2">
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+          </div>
+          <!-- Product price-->
+         <!--  <span class="text-muted text-decoration-line-through">€20.00</span>-->
+          {{product.price}}€
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center"><a class="btn btn-outline-dark mt-auto" routerLink="product/{{product.idProd}}">Voir</a></div>
+          <div class="text-center"><button class="btn btn-outline-dark mt-auto" (click)="addOnCart(product.idProd)">Ajouter au panier</button></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
