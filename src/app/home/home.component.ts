@@ -3,6 +3,7 @@ import { CategoryService } from '../services/category/category.service';
 import { AppSettings } from '../settings/app.settings';
 import { ProductService } from '../services/product/product.service';
 import { CartService } from '../services/cart/cart.service';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-home',
@@ -43,16 +44,18 @@ export class HomeComponent implements OnInit {
     )
   }
 
-  addOnCart(idProd: number) {
-   // this.getProduct(idProd);
-    this.cartService.addToCart(idProd);
+  addOnCart(item:any) {
+  //  this.getProduct(Product);
+   console.log(this.cartService.addToCart(item));
+    
+
     }
-  //  getProduct(id:number) {
-  //     this. productService.getProduct(id).subscribe(
-  //       (data: any) => {
-  //         console.log(data);
-  //         this.product = data;
-  //       }
-  //     )
-  //   }
+   getProduct(product: any) {
+      this.productService.getAllProducts().subscribe(
+        (data: any) => {
+          console.log(data);
+          this.product = data;
+        }
+      )
+    }
 }
