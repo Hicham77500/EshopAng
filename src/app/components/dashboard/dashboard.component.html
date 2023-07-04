@@ -1,0 +1,241 @@
+<body class="home">
+  <div class="container-fluid display-table">
+    <div class="row display-table-row">
+      <div
+        class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box"
+        id="navigation"
+      >
+        <div class="logo">
+          <a routerLink=""><h1>Eshop</h1> </a>
+        </div>
+        <div class="navi">
+          <ul>
+            <li class="active">
+              <a href="#"
+                ><i class="fa fa-home" aria-hidden="true"></i
+                ><span class="hidden-xs hidden-sm">Accueil</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-tasks" aria-hidden="true"></i
+                ><span class="hidden-xs hidden-sm">Produits</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-bar-chart" aria-hidden="true"></i
+                ><span class="hidden-xs hidden-sm">Categories</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-user" aria-hidden="true"></i
+                ><span class="hidden-xs hidden-sm">Calendrier</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-calendar" aria-hidden="true"></i
+                ><span class="hidden-xs hidden-sm">Utilisateurs</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-cog" aria-hidden="true"></i
+                ><span class="hidden-xs hidden-sm">Paramètres</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-10 col-sm-11 display-table-cell v-align">
+        <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+        <div class="row">
+          <header class="header-modif">
+            <div class="col-md-7">
+              <nav class="navbar-default pull-left">
+                <div class="navbar-header">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="offcanvas"
+                    data-target="#side-menu"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+              </nav>
+              <div class="search hidden-xs hidden-sm">
+                <input type="text" placeholder="Search" id="search" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="">
+                <ul class="header-top">
+                  <a
+                    href="#"
+                    class="add-project"
+                    ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M9 12l6 0" />
+                        <path d="M12 9l0 6" />
+                      </svg>Ajouter un produit</a
+                  >
+
+                  <li></li>
+                  <li class="hidden-xs">
+                    <a
+                      href="#"
+                      class="add-project"
+                      ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M9 12l6 0" />
+                        <path d="M12 9l0 6" />
+                      </svg>Ajouter une categorie</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-mail"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                        />
+                        <path d="M3 7l9 6l9 -6" /></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-info">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-bell"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+                        />
+                        <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                      </svg>
+                      <span class="label label-primary"></span>
+                    </a>
+                  </li>
+                  <!-- <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="boutton()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-edit" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                            <path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" />
+                                            <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z" />
+                                          </svg>
+                                            <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="navbar-content">
+                                                    <span>JS Krishna</span>
+                                                    <p class="text-muted small">
+                                                        me@jskrishna.com
+                                                    </p>
+                                                    <div class="divider">
+                                                    </div>
+                                                    <a href="#" class="view btn-sm active">View Profile</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="user-dashboard">
+          <h1>Bonjour</h1>
+          <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12 gutter">
+              <!-- <div class="sales">
+                                <h2></h2>
+
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>Period:</span> Last Year
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#">2012</a>
+                                        <a href="#">2014</a>
+                                        <a href="#">2015</a>
+                                        <a href="#">2016</a>
+                                    </div>
+                                </div>
+                            </div> -->
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12 gutter">
+              <!-- <div class="sales report">
+                                <h2>Report</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>Period:</span> Last Year
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#">2012</a>
+                                        <a href="#">2014</a>
+                                        <a href="#">2015</a>
+                                        <a href="#">2016</a>
+                                    </div>
+                                </div>
+                            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <!-- <div id="add_project" class="modal fade" role="dialog">
+        <div class="modal-dialog"> -->
+
+  <!-- Modal content-->
+  <!-- <div class="modal-content">
+                <div class="modal-header login-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Add Project</h4>
+                </div>
+                <div class="modal-body">
+                            <input type="text" placeholder="Project Title" name="name">
+                            <input type="text" placeholder="Post of Post" name="mail">
+                            <input type="text" placeholder="Author" name="passsword">
+                            <textarea placeholder="Desicrption"></textarea>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancel" data-dismiss="modal">Close</button>
+                    <button type="button" class="add-project" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+</body>

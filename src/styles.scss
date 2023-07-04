@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
 );
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
 
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
 /*!
 * Start Bootstrap - Shop Homepage v5.0.6 (https://startbootstrap.com/template/shop-homepage)
 * Copyright 2013-2023 Start Bootstrap
@@ -3087,7 +3093,7 @@ textarea.form-control-lg {
   --bs-btn-color: #f8f9fa;
   --bs-btn-border-color: #f8f9fa;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-bg: #4e5357;
   --bs-btn-hover-border-color: #f8f9fa;
   --bs-btn-focus-shadow-rgb: 248, 249, 250;
   --bs-btn-active-color: #000;
@@ -3104,11 +3110,11 @@ textarea.form-control-lg {
   --bs-btn-color: #212529;
   --bs-btn-border-color: #212529;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #212529;
+  --bs-btn-hover-bg: #424644;
   --bs-btn-hover-border-color: #212529;
   --bs-btn-focus-shadow-rgb: 33, 37, 41;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #212529;
+  --bs-btn-active-bg: #212924;
   --bs-btn-active-border-color: #212529;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #212529;
@@ -7724,7 +7730,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 5rem !important;
 }
 
 .px-0 {

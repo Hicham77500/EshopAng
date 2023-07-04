@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ViewProductComponent } from './view-product/view-product.component';
-import { CartComponent } from './cart/cart.component';
-import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './components/home/home.component';
+import { ViewProductComponent } from './components/view-product/view-product.component';
+import { CartComponent } from './components/cart/cart.component';
+import { AboutComponent } from './components/about/about.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -21,6 +24,18 @@ const routes: Routes = [
   {
     path: "about",
     component: AboutComponent,
+  },
+  {
+    path: "login",
+    component: LoginComponent,
+  },
+  {
+    path: "register",
+    component: RegisterComponent,
+  },
+  {
+    path: "dashboard",
+    component: DashboardComponent,
   }
 ];
 
