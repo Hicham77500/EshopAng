@@ -32,25 +32,25 @@ export class CartComponent implements OnInit {
 
     this.cart = this.getcartItem();
 
-    this.cartService.getProducts()
+   // this.cartService.getProducts()
       //this.orderService.getAllOrders()
-      .subscribe(
-        res => {
-          console.log(res);
+     // .subscribe(
+       // res => {
+         // console.log(res);
           // when initializing an item with id:
-          this.product = res;
-          this.grandTotal = this.cartService.getTotal();
+          //this.product = res;
+          //this.grandTotal = this.cartService.getTotal();
 
 
-        }
-      );
+      //  }
+    //  );
   }
   getAllCartItems() {
     console.log(this.cartService.cartItemList)
   }
   incProduct(item: any) {
 
-    this.cartService.inc(item);
+  //  this.cartService.inc(item);
 
   }
   getcartItem() {

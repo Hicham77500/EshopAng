@@ -53,6 +53,8 @@ export class AuthenticationService {
 
   }
   isLoggedInAsUser(){
+    console.log("je suis dans isLoggedInAsUser");
+    
     const token = localStorage.getItem('token');
     const isExpired = localStorage.getItem('isExpired')
     if(!token || !isExpired){

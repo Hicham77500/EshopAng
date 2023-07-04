@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
@@ -9,14 +9,14 @@ import { UserCustomerService } from 'src/app/services/user-customer/user-custome
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent implements OnInit, OnChanges {
   declare userLoggedIn: boolean;
   private subscription: Subscription[] = [];
   declare userAdmin: any;
   declare id: number;
 
   ngOnInit(): void {
-    this.GetUserConnected();
+   // this.GetUserConnected();
   }
 
   constructor(
@@ -27,6 +27,9 @@ export class NavBarComponent implements OnInit {
   ) {
    
     this.userAdmin = this.authenticationService.isLoggedInAsAdmin();
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+  //  this.GetUserConnected();
   }
   
   public GetUserConnected() {

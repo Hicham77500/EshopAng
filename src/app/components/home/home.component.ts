@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.getAllCategories();
     this.getAllProducts();
-     
+
   }
 
   constructor(
@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
   getAllCategories() {
     this.categoryService.getAllCategories().subscribe(
       (data: any) => {
-        console.log(data);
+
         this.categories = data;
       }
     )
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
   getAllProducts() {
     this.productService.getAllProducts().subscribe(
       (data: any) => {
-        console.log(data);
+
         this.products = data;
       }
     )
@@ -51,7 +51,9 @@ export class HomeComponent implements OnInit {
 
   addOnCart(item: any) {
     //  this.getProduct(Product);
-    console.log(this.cartService.addToCart(item));
+    console.log(item);
+    
+    this.cartService.addToCart(item.idProd);
 
 
   }
